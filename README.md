@@ -19,7 +19,8 @@ For each country, the following modeling approach is repeated:
 
 Note: The energy community model [FRESH:COM](https://github.com/tperger/FRESH-COM "FRESH:COM") with all its functionalities can be found at a separate repository. The single module `FRESH_LP.py` is also included in [ASCENDEMUS](https://github.com/tperger/ASCENDEMUS "ASCENDEMUS").
 
-##
+# License
+
 Copyright 2022 Theresia Perger
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
