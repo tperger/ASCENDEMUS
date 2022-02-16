@@ -11,7 +11,7 @@ from pyomo.environ import *
 
 def run_LP(
         load, PV, emissions, p_grid_in, p_grid_out, prosumer_data, time_steps,
-        prosumer, weight, solver_name, distances):
+        prosumer, weight, solver_name, distances, sharing=True):
 
     # Define some parameters and variables
     SoC_max = 'Maximum Storage|Electricity|Energy Storage System'
@@ -57,6 +57,19 @@ def run_LP(
                     within = NonNegativeReals)
     
     # Define constraints
+    
+    def no_sharing_rule(model, i, j, t):
+        if i is not j:
+            return(model.q_share[t,i,j] == 0)
+        else:
+            return (model.q_share[t,i,j] >= 0)
+    
+    if sharing == False:
+        model.no_sharing_con = Constraint(prosumer,
+                                          prosumer,
+                                          time_steps,
+                                          rule = no_sharing_rule)
+        
     def load_constraint_rule(model, i, t):    
         return (model.q_grid_in[t,i] 
                 + model.q_bat_out[t,i] 

@@ -21,9 +21,9 @@ IAMC_columns = ['model',
 
 model = 'FRESH:COM v2.0'
 scenario = 'Default scenario'
-countries = ['Austria', 'Greece']
+countries = ['Austria', 'Greece', 'Spain']
 year = 2019
-building_type = 'SAB'
+building_type = 'SH'
 wtp = [100, 0.1, 90, 30, 50, 60, 40, 80, 20, 100]
 num_prosumer = 10
 
