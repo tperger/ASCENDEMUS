@@ -1,6 +1,6 @@
 # ASCENDEMUS
 
-(Ongoing work for H2020 openENTRANCE case study 2.) 
+Ongoing work for [H2020 openENTRANCE](https://openentrance.eu/) case study 2.
 
 ## Upscaling energy community potential to European level
 
