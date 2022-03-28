@@ -1,4 +1,5 @@
 # ASCENDEMUS
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Ongoing work for [H2020 openENTRANCE](https://openentrance.eu/) case study 2.
 
